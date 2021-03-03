@@ -1,4 +1,4 @@
-#           Mitsubishi Heatpump MQTT interface Plugin
+#           Toshiba Heatpump MQTT interface Plugin
 #
 #           Author:     Masure, 2019
 #
@@ -6,9 +6,9 @@
 #   Plugin parameter definition below will be parsed during startup and copied into Manifest.xml, this will then drive the user interface in the Hardware web page
 
 """
-<plugin key="MitsubishiHpMqtt" name="Mitsubishi Heatpump MQTT interface Plugin" author="Masure" version="1.3" externallink="https://github.com/Masurov/Domoticz-MitsubishiHpMQTT-Plugin">
+<plugin key="ToshibaHpMqtt" name="Toshiba Heatpump MQTT interface Plugin" author="Masure" version="1.3" externallink="https://github.com/Masurov/Domoticz-MitsubishiHpMQTT-Plugin">
     <description>
-        <h2>Mitsubishi Heatpump MQTT Interface</h2>
+        <h2>Toshiba Heatpump MQTT Interface</h2>
         <p>Please read the github documentation for prerequisites</p>
         <h3>Features</h3>
         <ul style="list-style-type:square">
@@ -87,7 +87,7 @@ class BasePlugin:
             #Domoticz.Trace(True)
             Domoticz.Heartbeat(10)
            
-            self.PluginKey = "MitsubishiHpMqtt"
+            self.PluginKey = "ToshibaHpMqtt"
             self.HardwareID = Parameters["HardwareID"]
             self.debugging = Parameters["Mode6"]
             if self.debugging == "Verbose":
